@@ -1,0 +1,17 @@
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\SmallBiz\SmallBizz.BLL\bin\Debug\SmallBizz.BLL.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\SmallBiz\SmallBizz.BLL\bin\Debug\SmallBizz.BLL.pdb
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\SmallBiz\SmallBizz.BLL\bin\Debug\SmallBizz.BLL.xml
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\SmallBiz\SmallBizz.BLL\obj\Debug\SmallBizz.BLL.vbprojResolveAssemblyReference.cache
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\SmallBiz\SmallBizz.BLL\obj\Debug\SmallBizz.BLL.Resources.resources
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\SmallBiz\SmallBizz.BLL\obj\Debug\SmallBizz.BLL.vbproj.GenerateResource.Cache
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\SmallBiz\SmallBizz.BLL\obj\Debug\SmallBizz.BLL.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\SmallBiz\SmallBizz.BLL\obj\Debug\SmallBizz.BLL.xml
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\SmallBiz\SmallBizz.BLL\obj\Debug\SmallBizz.BLL.pdb
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\SmallBiz\SmallBizz.BLL\bin\Debug\SmallBiz.DAL.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\SmallBiz\SmallBizz.BLL\bin\Debug\SmallBiz.Entity.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\SmallBiz\SmallBizz.BLL\bin\Debug\EntityFramework.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\SmallBiz\SmallBizz.BLL\bin\Debug\SmallBiz.DAL.pdb
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\SmallBiz\SmallBizz.BLL\bin\Debug\SmallBiz.DAL.xml
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\SmallBiz\SmallBizz.BLL\bin\Debug\SmallBiz.Entity.pdb
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\SmallBiz\SmallBizz.BLL\bin\Debug\SmallBiz.Entity.xml
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\SmallBiz\SmallBizz.BLL\bin\Debug\EntityFramework.xml

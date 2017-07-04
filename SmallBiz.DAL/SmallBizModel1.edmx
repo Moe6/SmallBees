@@ -1,0 +1,400 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="SmallBizModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="InvCategory">
+          <Key>
+            <PropertyRef Name="Category" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Category" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="CategoryDesc" Type="nvarchar(max)" />
+          <Property Name="ShortCode" Type="nchar" MaxLength="5" />
+        </EntityType>
+        <EntityType Name="InvMaster">
+          <Key>
+            <PropertyRef Name="StockCode" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StockCode" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="Description" Type="nvarchar" MaxLength="50" />
+          <Property Name="Category" Type="nvarchar" MaxLength="20" />
+          <Property Name="StockUom" Type="char" MaxLength="3" />
+          <Property Name="AlternateUom" Type="char" MaxLength="3" />
+          <Property Name="ConvFactAltUom" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="Picture" Type="binary" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="InvMovement">
+          <Key>
+            <PropertyRef Name="MovementID" />
+          </Key>
+          <Property Name="MovementID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StockCode" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="Warehouse" Type="nchar" MaxLength="2" Nullable="false" />
+          <Property Name="TrnYear" Type="decimal" Precision="4" Scale="0" Nullable="false" />
+          <Property Name="TrnMonth" Type="decimal" Precision="2" Scale="0" Nullable="false" />
+          <Property Name="TrnDay" Type="decimal" Precision="2" Scale="0" Nullable="false" />
+          <Property Name="TrnTime" Type="datetime" Nullable="false" />
+          <Property Name="MovementType" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="TrnQty" Type="decimal" Precision="10" Scale="3" Nullable="false" />
+          <Property Name="UnitPrice" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="TrnValue" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="TrnType" Type="char" MaxLength="1" />
+          <Property Name="Document" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="Customer" Type="nvarchar" MaxLength="50" />
+          <Property Name="CustomerPoNumber" Type="char" MaxLength="30" />
+          <Property Name="Supplier" Type="nvarchar" MaxLength="50" />
+          <Property Name="OurRef" Type="nvarchar" MaxLength="50" />
+          <Property Name="TrnUser" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="InvWarehouse">
+          <Key>
+            <PropertyRef Name="StockCode" />
+            <PropertyRef Name="Warehouse" />
+          </Key>
+          <Property Name="StockCode" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="Warehouse" Type="nchar" MaxLength="2" Nullable="false" />
+          <Property Name="QtyOnhand" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="MtdQtyReceived" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="MtdQtySold" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="QtyOnOrder" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="QtyOnBackOrder" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="YtdQtySold" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="DateLastEntry" Type="datetime" />
+        </EntityType>
+        <EntityType Name="InvWhMaster">
+          <Key>
+            <PropertyRef Name="Warehouse" />
+          </Key>
+          <Property Name="Warehouse" Type="nchar" MaxLength="2" Nullable="false" />
+          <Property Name="Description" Type="nvarchar" MaxLength="150" />
+        </EntityType>
+        <Association Name="FK_InvMaster_InvCategory">
+          <End Role="InvCategory" Type="Self.InvCategory" Multiplicity="0..1" />
+          <End Role="InvMaster" Type="Self.InvMaster" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="InvCategory">
+              <PropertyRef Name="Category" />
+            </Principal>
+            <Dependent Role="InvMaster">
+              <PropertyRef Name="Category" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_InvMovement_InvWarehouse">
+          <End Role="InvWarehouse" Type="Self.InvWarehouse" Multiplicity="1" />
+          <End Role="InvMovement" Type="Self.InvMovement" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="InvWarehouse">
+              <PropertyRef Name="StockCode" />
+              <PropertyRef Name="Warehouse" />
+            </Principal>
+            <Dependent Role="InvMovement">
+              <PropertyRef Name="StockCode" />
+              <PropertyRef Name="Warehouse" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_InvWarehouse_InvMaster">
+          <End Role="InvMaster" Type="Self.InvMaster" Multiplicity="1" />
+          <End Role="InvWarehouse" Type="Self.InvWarehouse" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="InvMaster">
+              <PropertyRef Name="StockCode" />
+            </Principal>
+            <Dependent Role="InvWarehouse">
+              <PropertyRef Name="StockCode" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_InvWarehouse_InvWhMaster">
+          <End Role="InvWhMaster" Type="Self.InvWhMaster" Multiplicity="1" />
+          <End Role="InvWarehouse" Type="Self.InvWarehouse" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="InvWhMaster">
+              <PropertyRef Name="Warehouse" />
+            </Principal>
+            <Dependent Role="InvWarehouse">
+              <PropertyRef Name="Warehouse" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="SmallBizModelStoreContainer">
+          <EntitySet Name="InvCategory" EntityType="Self.InvCategory" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="InvMaster" EntityType="Self.InvMaster" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="InvMovement" EntityType="Self.InvMovement" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="InvWarehouse" EntityType="Self.InvWarehouse" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="InvWhMaster" EntityType="Self.InvWhMaster" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_InvMaster_InvCategory" Association="Self.FK_InvMaster_InvCategory">
+            <End Role="InvCategory" EntitySet="InvCategory" />
+            <End Role="InvMaster" EntitySet="InvMaster" />
+          </AssociationSet>
+          <AssociationSet Name="FK_InvMovement_InvWarehouse" Association="Self.FK_InvMovement_InvWarehouse">
+            <End Role="InvWarehouse" EntitySet="InvWarehouse" />
+            <End Role="InvMovement" EntitySet="InvMovement" />
+          </AssociationSet>
+          <AssociationSet Name="FK_InvWarehouse_InvMaster" Association="Self.FK_InvWarehouse_InvMaster">
+            <End Role="InvMaster" EntitySet="InvMaster" />
+            <End Role="InvWarehouse" EntitySet="InvWarehouse" />
+          </AssociationSet>
+          <AssociationSet Name="FK_InvWarehouse_InvWhMaster" Association="Self.FK_InvWarehouse_InvWhMaster">
+            <End Role="InvWhMaster" EntitySet="InvWhMaster" />
+            <End Role="InvWarehouse" EntitySet="InvWarehouse" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SmallBizModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="InvCategory">
+          <Key>
+            <PropertyRef Name="Category" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Category" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CategoryDesc" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ShortCode" Type="String" MaxLength="5" FixedLength="true" Unicode="true" />
+          <NavigationProperty Name="InvMasters" Relationship="SmallBizModel.FK_InvMaster_InvCategory" FromRole="InvCategory" ToRole="InvMaster" />
+        </EntityType>
+        <EntityType Name="InvMaster">
+          <Key>
+            <PropertyRef Name="StockCode" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StockCode" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Category" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="StockUom" Type="String" MaxLength="3" FixedLength="true" Unicode="false" />
+          <Property Name="AlternateUom" Type="String" MaxLength="3" FixedLength="true" Unicode="false" />
+          <Property Name="ConvFactAltUom" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="Picture" Type="Binary" MaxLength="100" FixedLength="true" />
+          <NavigationProperty Name="InvCategory" Relationship="SmallBizModel.FK_InvMaster_InvCategory" FromRole="InvMaster" ToRole="InvCategory" />
+          <NavigationProperty Name="InvWarehouses" Relationship="SmallBizModel.FK_InvWarehouse_InvMaster" FromRole="InvMaster" ToRole="InvWarehouse" />
+        </EntityType>
+        <EntityType Name="InvMovement">
+          <Key>
+            <PropertyRef Name="MovementID" />
+          </Key>
+          <Property Name="MovementID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StockCode" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Warehouse" Type="String" MaxLength="2" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="TrnYear" Type="Decimal" Precision="4" Scale="0" Nullable="false" />
+          <Property Name="TrnMonth" Type="Decimal" Precision="2" Scale="0" Nullable="false" />
+          <Property Name="TrnDay" Type="Decimal" Precision="2" Scale="0" Nullable="false" />
+          <Property Name="TrnTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="MovementType" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="TrnQty" Type="Decimal" Precision="10" Scale="3" Nullable="false" />
+          <Property Name="TrnValue" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="TrnType" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="Document" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="Customer" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CustomerPoNumber" Type="String" MaxLength="30" FixedLength="true" Unicode="false" />
+          <Property Name="Supplier" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="OurRef" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="TrnUser" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="UnitPrice" Type="Decimal" Precision="18" Scale="2" />
+          <NavigationProperty Name="InvWarehouse" Relationship="SmallBizModel.FK_InvMovement_InvWarehouse" FromRole="InvMovement" ToRole="InvWarehouse" />
+        </EntityType>
+        <EntityType Name="InvWarehouse">
+          <Key>
+            <PropertyRef Name="StockCode" />
+            <PropertyRef Name="Warehouse" />
+          </Key>
+          <Property Name="StockCode" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Warehouse" Type="String" MaxLength="2" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="QtyOnhand" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="MtdQtyReceived" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="MtdQtySold" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="QtyOnOrder" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="QtyOnBackOrder" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="YtdQtySold" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="DateLastEntry" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="InvMovements" Relationship="SmallBizModel.FK_InvMovement_InvWarehouse" FromRole="InvWarehouse" ToRole="InvMovement" />
+          <NavigationProperty Name="InvWhMaster" Relationship="SmallBizModel.FK_InvWarehouse_InvWhMaster" FromRole="InvWarehouse" ToRole="InvWhMaster" />
+          <NavigationProperty Name="InvMaster" Relationship="SmallBizModel.FK_InvWarehouse_InvMaster" FromRole="InvWarehouse" ToRole="InvMaster" />
+        </EntityType>
+        <EntityContainer Name="SmallBizEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="InvCategories" EntityType="Self.InvCategory" />
+          <EntitySet Name="InvMasters" EntityType="Self.InvMaster" />
+          <EntitySet Name="InvMovements" EntityType="Self.InvMovement" />
+          <EntitySet Name="InvWarehouses" EntityType="Self.InvWarehouse" />
+          <EntitySet Name="InvWhMasters" EntityType="SmallBizModel.InvWhMaster" />
+          <AssociationSet Name="FK_InvMaster_InvCategory" Association="SmallBizModel.FK_InvMaster_InvCategory">
+            <End Role="InvCategory" EntitySet="InvCategories" />
+            <End Role="InvMaster" EntitySet="InvMasters" />
+          </AssociationSet>
+          <AssociationSet Name="FK_InvMovement_InvWarehouse" Association="SmallBizModel.FK_InvMovement_InvWarehouse">
+            <End Role="InvWarehouse" EntitySet="InvWarehouses" />
+            <End Role="InvMovement" EntitySet="InvMovements" />
+          </AssociationSet>
+          <AssociationSet Name="FK_InvWarehouse_InvWhMaster" Association="SmallBizModel.FK_InvWarehouse_InvWhMaster">
+            <End Role="InvWhMaster" EntitySet="InvWhMasters" />
+            <End Role="InvWarehouse" EntitySet="InvWarehouses" />
+          </AssociationSet>
+          <AssociationSet Name="FK_InvWarehouse_InvMaster" Association="SmallBizModel.FK_InvWarehouse_InvMaster">
+            <End Role="InvMaster" EntitySet="InvMasters" />
+            <End Role="InvWarehouse" EntitySet="InvWarehouses" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="InvWhMaster">
+          <Key>
+            <PropertyRef Name="Warehouse" />
+          </Key>
+          <Property Name="Warehouse" Type="String" Nullable="false" MaxLength="2" FixedLength="true" Unicode="true" />
+          <Property Name="Description" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="InvWarehouses" Relationship="SmallBizModel.FK_InvWarehouse_InvWhMaster" FromRole="InvWhMaster" ToRole="InvWarehouse" />
+        </EntityType>
+        <Association Name="FK_InvMaster_InvCategory">
+          <End Type="SmallBizModel.InvCategory" Role="InvCategory" Multiplicity="0..1" />
+          <End Type="SmallBizModel.InvMaster" Role="InvMaster" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="InvCategory">
+              <PropertyRef Name="Category" />
+            </Principal>
+            <Dependent Role="InvMaster">
+              <PropertyRef Name="Category" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_InvMovement_InvWarehouse">
+          <End Type="SmallBizModel.InvWarehouse" Role="InvWarehouse" Multiplicity="1" />
+          <End Type="SmallBizModel.InvMovement" Role="InvMovement" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="InvWarehouse">
+              <PropertyRef Name="StockCode" />
+              <PropertyRef Name="Warehouse" />
+            </Principal>
+            <Dependent Role="InvMovement">
+              <PropertyRef Name="StockCode" />
+              <PropertyRef Name="Warehouse" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_InvWarehouse_InvWhMaster">
+          <End Type="SmallBizModel.InvWhMaster" Role="InvWhMaster" Multiplicity="1" />
+          <End Type="SmallBizModel.InvWarehouse" Role="InvWarehouse" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="InvWhMaster">
+              <PropertyRef Name="Warehouse" />
+            </Principal>
+            <Dependent Role="InvWarehouse">
+              <PropertyRef Name="Warehouse" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_InvWarehouse_InvMaster">
+          <End Type="SmallBizModel.InvMaster" Role="InvMaster" Multiplicity="1" />
+          <End Type="SmallBizModel.InvWarehouse" Role="InvWarehouse" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="InvMaster">
+              <PropertyRef Name="StockCode" />
+            </Principal>
+            <Dependent Role="InvWarehouse">
+              <PropertyRef Name="StockCode" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="SmallBizModelStoreContainer" CdmEntityContainer="SmallBizEntities">
+          <EntitySetMapping Name="InvCategories">
+            <EntityTypeMapping TypeName="SmallBizModel.InvCategory">
+              <MappingFragment StoreEntitySet="InvCategory">
+                <ScalarProperty Name="ShortCode" ColumnName="ShortCode" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Category" ColumnName="Category" />
+                <ScalarProperty Name="CategoryDesc" ColumnName="CategoryDesc" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="InvMasters">
+            <EntityTypeMapping TypeName="SmallBizModel.InvMaster">
+              <MappingFragment StoreEntitySet="InvMaster">
+                <ScalarProperty Name="Picture" ColumnName="Picture" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="StockCode" ColumnName="StockCode" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Category" ColumnName="Category" />
+                <ScalarProperty Name="StockUom" ColumnName="StockUom" />
+                <ScalarProperty Name="AlternateUom" ColumnName="AlternateUom" />
+                <ScalarProperty Name="ConvFactAltUom" ColumnName="ConvFactAltUom" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="InvMovements">
+            <EntityTypeMapping TypeName="SmallBizModel.InvMovement">
+              <MappingFragment StoreEntitySet="InvMovement">
+                <ScalarProperty Name="UnitPrice" ColumnName="UnitPrice" />
+                <ScalarProperty Name="MovementID" ColumnName="MovementID" />
+                <ScalarProperty Name="StockCode" ColumnName="StockCode" />
+                <ScalarProperty Name="Warehouse" ColumnName="Warehouse" />
+                <ScalarProperty Name="TrnYear" ColumnName="TrnYear" />
+                <ScalarProperty Name="TrnMonth" ColumnName="TrnMonth" />
+                <ScalarProperty Name="TrnDay" ColumnName="TrnDay" />
+                <ScalarProperty Name="TrnTime" ColumnName="TrnTime" />
+                <ScalarProperty Name="MovementType" ColumnName="MovementType" />
+                <ScalarProperty Name="TrnQty" ColumnName="TrnQty" />
+                <ScalarProperty Name="TrnValue" ColumnName="TrnValue" />
+                <ScalarProperty Name="TrnType" ColumnName="TrnType" />
+                <ScalarProperty Name="Document" ColumnName="Document" />
+                <ScalarProperty Name="Customer" ColumnName="Customer" />
+                <ScalarProperty Name="CustomerPoNumber" ColumnName="CustomerPoNumber" />
+                <ScalarProperty Name="Supplier" ColumnName="Supplier" />
+                <ScalarProperty Name="OurRef" ColumnName="OurRef" />
+                <ScalarProperty Name="TrnUser" ColumnName="TrnUser" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="InvWarehouses">
+            <EntityTypeMapping TypeName="SmallBizModel.InvWarehouse">
+              <MappingFragment StoreEntitySet="InvWarehouse">
+                <ScalarProperty Name="StockCode" ColumnName="StockCode" />
+                <ScalarProperty Name="Warehouse" ColumnName="Warehouse" />
+                <ScalarProperty Name="QtyOnhand" ColumnName="QtyOnhand" />
+                <ScalarProperty Name="MtdQtyReceived" ColumnName="MtdQtyReceived" />
+                <ScalarProperty Name="MtdQtySold" ColumnName="MtdQtySold" />
+                <ScalarProperty Name="QtyOnOrder" ColumnName="QtyOnOrder" />
+                <ScalarProperty Name="QtyOnBackOrder" ColumnName="QtyOnBackOrder" />
+                <ScalarProperty Name="YtdQtySold" ColumnName="YtdQtySold" />
+                <ScalarProperty Name="DateLastEntry" ColumnName="DateLastEntry" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="InvWhMasters">
+            <EntityTypeMapping TypeName="SmallBizModel.InvWhMaster">
+              <MappingFragment StoreEntitySet="InvWhMaster">
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Warehouse" ColumnName="Warehouse" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
