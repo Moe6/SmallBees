@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SysproCompanyC_7Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="PorMasterHdr+">
+    <Key>
+      <PropertyRef Name="PurchaseOrder" />
+    </Key>
+    <Property Name="PurchaseOrder" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Incoterms" Type="varchar" MaxLength="21" />
+    <Property Name="TimeStamp" Type="timestamp" StoreGeneratedPattern="Computed" />
+    <Property Name="ConsigneeOrderNo" Type="varchar" MaxLength="20" />
+    <Property Name="Packaging" Type="varchar" MaxLength="20" />
+    <Property Name="MethodOfPayment" Type="varchar" MaxLength="100" />
+    <Property Name="YourTenderOf" Type="varchar" MaxLength="30" />
+    <Property Name="PortOfEntry" Type="varchar" MaxLength="30" />
+    <Property Name="ForwardingAgentDet" Type="varchar" MaxLength="100" />
+    <Property Name="For002" Type="varchar" MaxLength="100" />
+    <Property Name="For003" Type="varchar" MaxLength="100" />
+    <Property Name="ForwardCoverRequir" Type="char" MaxLength="3" />
+    <Property Name="FobDate" Type="datetime" />
+    <Property Name="SubstationName" Type="varchar" MaxLength="10" />
+    <Property Name="Confirmed" Type="varchar" MaxLength="10" />
+    <Property Name="ConfirmedDate" Type="varchar" MaxLength="8" />
+    <Property Name="IncotermPort" Type="varchar" MaxLength="10" />
+    <Property Name="DeliveryMethod" Type="varchar" MaxLength="10" />
+    <Property Name="Attn" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="ReqDetail">
+    <Key>
+      <PropertyRef Name="Originator" />
+      <PropertyRef Name="Requisition" />
+      <PropertyRef Name="Line" />
+    </Key>
+    <Property Name="Originator" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Requisition" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Line" Type="decimal" Precision="3" Scale="0" Nullable="false" />
+    <Property Name="ReqnStatus" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="StockCode" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="StockDescription" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="OrderQty" Type="decimal" Precision="18" Scale="6" Nullable="false" />
+    <Property Name="OrderUom" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="DateReqnRaised" Type="datetime" />
+    <Property Name="DueDate" Type="datetime" />
+    <Property Name="ReasonForReqn" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Supplier" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="Price" Type="decimal" Precision="15" Scale="5" Nullable="false" />
+    <Property Name="PriceUom" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="DiscPct1" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="DiscPct2" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="DiscPct3" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="DiscountCode" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Warehouse" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="SupCatalogueNum" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Job" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="JobLine" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="GlCode" Type="varchar" MaxLength="35" Nullable="false" />
+    <Property Name="ProductClass" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="TaxCode" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="Customer" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="CustomerPoNumber" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="CapexNum" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="ReqnOnHoldFlag" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="ReasonForHold" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="HoldUser" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="ConfirmedPoNum" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="ConfirmedPoLine" Type="decimal" Precision="4" Scale="0" Nullable="false" />
+    <Property Name="DatePoConfirmed" Type="datetime" />
+    <Property Name="Buyer" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="CurrentHolder" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="HoldersRouteNum" Type="decimal" Precision="3" Scale="0" Nullable="false" />
+    <Property Name="DateActioned" Type="datetime" />
+    <Property Name="ReceiptFlag" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="DateLastReceipt" Type="datetime" />
+    <Property Name="AckReceiptFlag" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="SalesOrder" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="SalesOrderLine" Type="decimal" Precision="4" Scale="0" Nullable="false" />
+    <Property Name="PrintedFlag" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="OrderDate" Type="datetime" />
+    <Property Name="HierHead" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Section1" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Section2" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Section3" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Section4" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="SubOperationNum" Type="decimal" Precision="5" Scale="0" Nullable="false" />
+    <Property Name="Quote" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="QuoteVersion" Type="decimal" Precision="3" Scale="0" Nullable="false" />
+    <Property Name="QuoteLineNum" Type="decimal" Precision="4" Scale="0" Nullable="false" />
+    <Property Name="InspectNonStkRec" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="DocumentFormat" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="EccHold" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="Version" Type="char" MaxLength="5" Nullable="false" />
+    <Property Name="Release" Type="char" MaxLength="5" Nullable="false" />
+    <Property Name="UserCode" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="BpoApproved" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="Operator" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="CurrentOperator" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="AssetFlag" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="CapexLine" Type="decimal" Precision="5" Scale="0" Nullable="false" />
+    <Property Name="CapexCode" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="RequisitionType" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="IssueWarehouse" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="ApprovedDate" Type="datetime" />
+    <Property Name="SelectionCode" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SelectionType" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="AutoVoucherReqd" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="ShippingLocation" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="DeliveryTerms" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="IncludeInMrp" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="TimeStamp" Type="timestamp" StoreGeneratedPattern="Computed" />
+    <Property Name="WithTaxExpenseType" Type="char" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ReqDetail+">
+    <Key>
+      <PropertyRef Name="Originator" />
+      <PropertyRef Name="Requisition" />
+      <PropertyRef Name="Line" />
+    </Key>
+    <Property Name="Originator" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Requisition" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Line" Type="decimal" Precision="3" Scale="0" Nullable="false" />
+    <Property Name="Incoterms" Type="varchar" MaxLength="21" />
+    <Property Name="TimeStamp" Type="timestamp" StoreGeneratedPattern="Computed" />
+    <Property Name="ConsigneeOrderNo" Type="varchar" MaxLength="20" />
+    <Property Name="Packaging" Type="varchar" MaxLength="21" />
+    <Property Name="MethodOfPayment" Type="varchar" MaxLength="100" />
+    <Property Name="YourTenderOf" Type="varchar" MaxLength="30" />
+    <Property Name="PortOfEntry" Type="varchar" MaxLength="30" />
+    <Property Name="ForwardingAgentDet" Type="varchar" MaxLength="100" />
+    <Property Name="For002" Type="varchar" MaxLength="100" />
+    <Property Name="For003" Type="varchar" MaxLength="112" />
+    <Property Name="ForwardCoverRequir" Type="char" MaxLength="3" />
+    <Property Name="FobDate" Type="varchar" MaxLength="8" />
+    <Property Name="SubstationName" Type="varchar" MaxLength="10" />
+    <Property Name="Confirmed" Type="varchar" MaxLength="10" />
+    <Property Name="ConfirmedDate" Type="varchar" MaxLength="10" />
+    <Property Name="IncotermPort" Type="varchar" MaxLength="10" />
+    <Property Name="DeliveryMethod" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityContainer Name="SysproCompanyC_7ModelStoreContainer">
+    <EntitySet Name="PorMasterHdr+" EntityType="Self.PorMasterHdr+" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ReqDetail" EntityType="Self.ReqDetail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ReqDetail+" EntityType="Self.ReqDetail+" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

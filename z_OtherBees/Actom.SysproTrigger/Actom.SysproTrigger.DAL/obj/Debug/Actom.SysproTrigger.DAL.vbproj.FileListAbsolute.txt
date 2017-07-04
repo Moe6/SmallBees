@@ -1,0 +1,17 @@
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\Actom.SysproTrigger\Actom.SysproTrigger.DAL\obj\Debug\Actom.SysproTrigger.DAL.vbprojResolveAssemblyReference.cache
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\Actom.SysproTrigger\Actom.SysproTrigger.DAL\obj\Debug\Actom.SysproTrigger.DAL.Resources.resources
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\Actom.SysproTrigger\Actom.SysproTrigger.DAL\obj\Debug\Actom.SysproTrigger.DAL.vbproj.GenerateResource.Cache
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\Actom.SysproTrigger\Actom.SysproTrigger.DAL\bin\Debug\Actom.SysproTrigger.DAL.dll.config
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\Actom.SysproTrigger\Actom.SysproTrigger.DAL\bin\Debug\Actom.SysproTrigger.DAL.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\Actom.SysproTrigger\Actom.SysproTrigger.DAL\bin\Debug\Actom.SysproTrigger.DAL.pdb
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\Actom.SysproTrigger\Actom.SysproTrigger.DAL\bin\Debug\Actom.SysproTrigger.DAL.xml
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\Actom.SysproTrigger\Actom.SysproTrigger.DAL\bin\Debug\Actom.SysproTrigger.Entity.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\Actom.SysproTrigger\Actom.SysproTrigger.DAL\bin\Debug\EntityFramework.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\Actom.SysproTrigger\Actom.SysproTrigger.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\Actom.SysproTrigger\Actom.SysproTrigger.DAL\bin\Debug\Actom.SysproTrigger.Entity.pdb
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\Actom.SysproTrigger\Actom.SysproTrigger.DAL\bin\Debug\Actom.SysproTrigger.Entity.xml
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\Actom.SysproTrigger\Actom.SysproTrigger.DAL\bin\Debug\EntityFramework.xml
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\Actom.SysproTrigger\Actom.SysproTrigger.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\Actom.SysproTrigger\Actom.SysproTrigger.DAL\obj\Debug\Actom.SysproTrigger.DAL.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\Actom.SysproTrigger\Actom.SysproTrigger.DAL\obj\Debug\Actom.SysproTrigger.DAL.xml
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\Actom.SysproTrigger\Actom.SysproTrigger.DAL\obj\Debug\Actom.SysproTrigger.DAL.pdb
