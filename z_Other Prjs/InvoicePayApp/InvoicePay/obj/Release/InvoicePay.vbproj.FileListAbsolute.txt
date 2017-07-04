@@ -1,0 +1,6 @@
+c:\users\moe\documents\visual studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Release\InvoicePay.exe.config
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\obj\Release\InvoicePay.vbprojResolveAssemblyReference.cache
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\obj\Release\InvoicePay.frmInvoicePayment.resources
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\obj\Release\InvoicePay.Resources.resources
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\obj\Release\InvoicePay.vbproj.GenerateResource.Cache
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\obj\Release\InvoicePay.exe.licenses

@@ -1,0 +1,626 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="SysproCompanyC_7Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="ArInvoice">
+          <Key>
+            <PropertyRef Name="Customer" />
+            <PropertyRef Name="Invoice" />
+            <PropertyRef Name="DocumentType" />
+          </Key>
+          <Property Name="Customer" Type="varchar" MaxLength="15" Nullable="false" />
+          <Property Name="Invoice" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="DocumentType" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="NextPaymEntry" Type="decimal" Precision="10" Scale="0" Nullable="false" />
+          <Property Name="InvoiceDate" Type="datetime" />
+          <Property Name="SalesOrder" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="CustomerPoNumber" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Salesperson" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Branch" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="Area" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="TermsCode" Type="char" MaxLength="2" Nullable="false" />
+          <Property Name="OrigDiscValue" Type="decimal" Precision="14" Scale="2" Nullable="false" />
+          <Property Name="InvoiceBal1" Type="decimal" Precision="14" Scale="2" Nullable="false" />
+          <Property Name="InvoiceBal2" Type="decimal" Precision="14" Scale="2" Nullable="false" />
+          <Property Name="InvoiceBal3" Type="decimal" Precision="14" Scale="2" Nullable="false" />
+          <Property Name="InvoiceYear" Type="decimal" Precision="4" Scale="0" Nullable="false" />
+          <Property Name="InvoiceMonth" Type="decimal" Precision="2" Scale="0" Nullable="false" />
+          <Property Name="YearInvBalZero" Type="decimal" Precision="4" Scale="0" Nullable="false" />
+          <Property Name="MonthInvBalZero" Type="decimal" Precision="2" Scale="0" Nullable="false" />
+          <Property Name="LastDelNote" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="StoreNumber" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="ProofOfDelivery" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="PodEntryDate" Type="datetime" />
+          <Property Name="PodReference" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="CurrencyValue" Type="decimal" Precision="14" Scale="2" Nullable="false" />
+          <Property Name="PostCurrency" Type="char" MaxLength="3" Nullable="false" />
+          <Property Name="ConvRate" Type="decimal" Precision="12" Scale="6" Nullable="false" />
+          <Property Name="MulDiv" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="AccountCur" Type="char" MaxLength="3" Nullable="false" />
+          <Property Name="AccConvRate" Type="decimal" Precision="12" Scale="6" Nullable="false" />
+          <Property Name="AccMulDiv" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="TriangCurrency" Type="char" MaxLength="3" Nullable="false" />
+          <Property Name="TriangRate" Type="decimal" Precision="12" Scale="6" Nullable="false" />
+          <Property Name="TriangMulDiv" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="RetentionInv" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="TaxStatus" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="TaxPortion" Type="decimal" Precision="14" Scale="2" Nullable="false" />
+          <Property Name="FixExchangeRate" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="NextRevalNo" Type="decimal" Precision="10" Scale="0" Nullable="false" />
+          <Property Name="TaxCode" Type="char" MaxLength="3" Nullable="false" />
+          <Property Name="DiscBal" Type="decimal" Precision="14" Scale="2" Nullable="false" />
+          <Property Name="PaymentRunFlag" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="CollectionRunFlag" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="InvoicePdcFlag" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="TimeStamp" Type="timestamp" StoreGeneratedPattern="Computed" />
+          <Property Name="OrigInvRate" Type="decimal" Precision="12" Scale="6" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SorMaster">
+          <Key>
+            <PropertyRef Name="SalesOrder" />
+          </Key>
+          <Property Name="SalesOrder" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="NextDetailLine" Type="decimal" Precision="4" Scale="0" Nullable="false" />
+          <Property Name="OrderStatus" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="ActiveFlag" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="CancelledFlag" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="DocumentType" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="Customer" Type="varchar" MaxLength="15" Nullable="false" />
+          <Property Name="Salesperson" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="CustomerPoNumber" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="OrderDate" Type="datetime" />
+          <Property Name="EntrySystemDate" Type="datetime" />
+          <Property Name="ReqShipDate" Type="datetime" />
+          <Property Name="DateLastDocPrt" Type="datetime" />
+          <Property Name="ShippingInstrs" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="ShippingInstrsCod" Type="varchar" MaxLength="6" Nullable="false" />
+          <Property Name="AltShipAddrFlag" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="InvoiceCount" Type="decimal" Precision="2" Scale="0" Nullable="false" />
+          <Property Name="InvTermsOverride" Type="char" MaxLength="2" Nullable="false" />
+          <Property Name="CreditAuthority" Type="char" MaxLength="3" Nullable="false" />
+          <Property Name="Branch" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="SpecialInstrs" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="EntInvoice" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="EntInvoiceDate" Type="datetime" />
+          <Property Name="DiscPct1" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+          <Property Name="DiscPct2" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+          <Property Name="DiscPct3" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+          <Property Name="OrderType" Type="char" MaxLength="2" Nullable="false" />
+          <Property Name="TaxExemptFlag" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="Area" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="TaxExemptNumber" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="TaxExemptOverride" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="CashCredit" Type="char" MaxLength="2" Nullable="false" />
+          <Property Name="Warehouse" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="LastInvoice" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="ScheduledOrdFlag" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="GstExemptFlag" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="GstExemptNum" Type="varchar" MaxLength="15" Nullable="false" />
+          <Property Name="GstExemptORide" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="IbtFlag" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="OrdAcknwPrinted" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="DetCustMvmtReqd" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="DocumentFormat" Type="char" MaxLength="2" Nullable="false" />
+          <Property Name="FixExchangeRate" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="ExchangeRate" Type="decimal" Precision="12" Scale="6" Nullable="false" />
+          <Property Name="MulDiv" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="Currency" Type="char" MaxLength="3" Nullable="false" />
+          <Property Name="GstDeduction" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="OrderStatusFail" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="ConsolidatedOrder" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="CreditedInvDate" Type="datetime" />
+          <Property Name="Job" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="SerialisedFlag" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="CounterSalesFlag" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="Nationality" Type="char" MaxLength="3" Nullable="false" />
+          <Property Name="DeliveryTerms" Type="char" MaxLength="3" Nullable="false" />
+          <Property Name="TransactionNature" Type="decimal" Precision="3" Scale="0" Nullable="false" />
+          <Property Name="TransportMode" Type="decimal" Precision="2" Scale="0" Nullable="false" />
+          <Property Name="ProcessFlag" Type="decimal" Precision="1" Scale="0" Nullable="false" />
+          <Property Name="JobsExistFlag" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="AlternateKey" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="LastOperator" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="HierarchyFlag" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="DepositFlag" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="EdiSource" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="DeliveryNote" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Operator" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="LineComp" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="CaptureHh" Type="decimal" Precision="2" Scale="0" Nullable="false" />
+          <Property Name="CaptureMm" Type="decimal" Precision="2" Scale="0" Nullable="false" />
+          <Property Name="LastDelNote" Type="datetime" />
+          <Property Name="TimeDelPrtedHh" Type="decimal" Precision="2" Scale="0" Nullable="false" />
+          <Property Name="TimeDelPrtedMm" Type="decimal" Precision="2" Scale="0" Nullable="false" />
+          <Property Name="TimeInvPrtedHh" Type="decimal" Precision="2" Scale="0" Nullable="false" />
+          <Property Name="TimeInvPrtedMm" Type="decimal" Precision="2" Scale="0" Nullable="false" />
+          <Property Name="DateLastInvPrt" Type="datetime" />
+          <Property Name="Salesperson2" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Salesperson3" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Salesperson4" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="CommissionSales1" Type="decimal" Precision="4" Scale="2" Nullable="false" />
+          <Property Name="CommissionSales2" Type="decimal" Precision="4" Scale="2" Nullable="false" />
+          <Property Name="CommissionSales3" Type="decimal" Precision="4" Scale="2" Nullable="false" />
+          <Property Name="CommissionSales4" Type="decimal" Precision="4" Scale="2" Nullable="false" />
+          <Property Name="TimeTakenToAdd" Type="decimal" Precision="3" Scale="0" Nullable="false" />
+          <Property Name="TimeTakenToChg" Type="decimal" Precision="3" Scale="0" Nullable="false" />
+          <Property Name="FaxInvInBatch" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="InterWhSale" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="SourceWarehouse" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="TargetWarehouse" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="DispatchesMade" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="LiveDispExist" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="NumDispatches" Type="decimal" Precision="4" Scale="0" Nullable="false" />
+          <Property Name="CustomerName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="ShipAddress1" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="ShipAddress2" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="ShipAddress3" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="ShipAddress3Loc" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="ShipAddress4" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="ShipAddress5" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="ShipPostalCode" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="ShipToGpsLat" Type="decimal" Precision="8" Scale="6" Nullable="false" />
+          <Property Name="ShipToGpsLong" Type="decimal" Precision="9" Scale="6" Nullable="false" />
+          <Property Name="State" Type="char" MaxLength="2" Nullable="false" />
+          <Property Name="CountyZip" Type="char" MaxLength="5" Nullable="false" />
+          <Property Name="ExtendedTaxCode" Type="char" MaxLength="3" Nullable="false" />
+          <Property Name="MultiShipCode" Type="char" MaxLength="5" Nullable="false" />
+          <Property Name="WebCreated" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="Quote" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="QuoteVersion" Type="decimal" Precision="3" Scale="0" Nullable="false" />
+          <Property Name="GtrReference" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="NonMerchFlag" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="Email" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="User1" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="CompanyTaxNo" Type="varchar" MaxLength="15" Nullable="false" />
+          <Property Name="TpmPickupFlag" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="TpmEvaluatedFlag" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="StandardComment" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="DetailStatus" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="SalesOrderSource" Type="varchar" MaxLength="6" Nullable="false" />
+          <Property Name="SalesOrderSrcDesc" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="LanguageCode" Type="char" MaxLength="2" Nullable="false" />
+          <Property Name="ShippingLocation" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="IncludeInMrp" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="TimeStamp" Type="timestamp" StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <Association Name="Syspro_FK_ArInvoice_SorMaster">
+          <End Role="SorMaster" Type="Self.SorMaster" Multiplicity="1" />
+          <End Role="ArInvoice" Type="Self.ArInvoice" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SorMaster">
+              <PropertyRef Name="SalesOrder" />
+            </Principal>
+            <Dependent Role="ArInvoice">
+              <PropertyRef Name="SalesOrder" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="SysproCompanyC_7ModelStoreContainer">
+          <EntitySet Name="ArInvoice" EntityType="Self.ArInvoice" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SorMaster" EntityType="Self.SorMaster" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="Syspro_FK_ArInvoice_SorMaster" Association="Self.Syspro_FK_ArInvoice_SorMaster">
+            <End Role="SorMaster" EntitySet="SorMaster" />
+            <End Role="ArInvoice" EntitySet="ArInvoice" />
+          </AssociationSet>
+          </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SysproCompanyC_7Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="SorMaster">
+          <Key>
+            <PropertyRef Name="SalesOrder" />
+          </Key>
+          <Property Name="SalesOrder" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="NextDetailLine" Type="Decimal" Precision="4" Scale="0" Nullable="false" />
+          <Property Name="OrderStatus" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="ActiveFlag" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="CancelledFlag" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="DocumentType" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="Customer" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Salesperson" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CustomerPoNumber" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="OrderDate" Type="DateTime" Precision="3" />
+          <Property Name="EntrySystemDate" Type="DateTime" Precision="3" />
+          <Property Name="ReqShipDate" Type="DateTime" Precision="3" />
+          <Property Name="DateLastDocPrt" Type="DateTime" Precision="3" />
+          <Property Name="ShippingInstrs" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ShippingInstrsCod" Type="String" MaxLength="6" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="AltShipAddrFlag" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="InvoiceCount" Type="Decimal" Precision="2" Scale="0" Nullable="false" />
+          <Property Name="InvTermsOverride" Type="String" MaxLength="2" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="CreditAuthority" Type="String" MaxLength="3" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="Branch" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SpecialInstrs" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="EntInvoice" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="EntInvoiceDate" Type="DateTime" Precision="3" />
+          <Property Name="DiscPct1" Type="Decimal" Precision="5" Scale="2" Nullable="false" />
+          <Property Name="DiscPct2" Type="Decimal" Precision="5" Scale="2" Nullable="false" />
+          <Property Name="DiscPct3" Type="Decimal" Precision="5" Scale="2" Nullable="false" />
+          <Property Name="OrderType" Type="String" MaxLength="2" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="TaxExemptFlag" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="Area" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TaxExemptNumber" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TaxExemptOverride" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="CashCredit" Type="String" MaxLength="2" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="Warehouse" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="LastInvoice" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ScheduledOrdFlag" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="GstExemptFlag" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="GstExemptNum" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="GstExemptORide" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="IbtFlag" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="OrdAcknwPrinted" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="DetCustMvmtReqd" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="DocumentFormat" Type="String" MaxLength="2" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="FixExchangeRate" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="ExchangeRate" Type="Decimal" Precision="12" Scale="6" Nullable="false" />
+          <Property Name="MulDiv" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="Currency" Type="String" MaxLength="3" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="GstDeduction" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="OrderStatusFail" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="ConsolidatedOrder" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="CreditedInvDate" Type="DateTime" Precision="3" />
+          <Property Name="Job" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SerialisedFlag" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="CounterSalesFlag" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="Nationality" Type="String" MaxLength="3" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="DeliveryTerms" Type="String" MaxLength="3" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="TransactionNature" Type="Decimal" Precision="3" Scale="0" Nullable="false" />
+          <Property Name="TransportMode" Type="Decimal" Precision="2" Scale="0" Nullable="false" />
+          <Property Name="ProcessFlag" Type="Decimal" Precision="1" Scale="0" Nullable="false" />
+          <Property Name="JobsExistFlag" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="AlternateKey" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="LastOperator" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="HierarchyFlag" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="DepositFlag" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="EdiSource" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="DeliveryNote" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Operator" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="LineComp" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="CaptureHh" Type="Decimal" Precision="2" Scale="0" Nullable="false" />
+          <Property Name="CaptureMm" Type="Decimal" Precision="2" Scale="0" Nullable="false" />
+          <Property Name="LastDelNote" Type="DateTime" Precision="3" />
+          <Property Name="TimeDelPrtedHh" Type="Decimal" Precision="2" Scale="0" Nullable="false" />
+          <Property Name="TimeDelPrtedMm" Type="Decimal" Precision="2" Scale="0" Nullable="false" />
+          <Property Name="TimeInvPrtedHh" Type="Decimal" Precision="2" Scale="0" Nullable="false" />
+          <Property Name="TimeInvPrtedMm" Type="Decimal" Precision="2" Scale="0" Nullable="false" />
+          <Property Name="DateLastInvPrt" Type="DateTime" Precision="3" />
+          <Property Name="Salesperson2" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Salesperson3" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Salesperson4" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CommissionSales1" Type="Decimal" Precision="4" Scale="2" Nullable="false" />
+          <Property Name="CommissionSales2" Type="Decimal" Precision="4" Scale="2" Nullable="false" />
+          <Property Name="CommissionSales3" Type="Decimal" Precision="4" Scale="2" Nullable="false" />
+          <Property Name="CommissionSales4" Type="Decimal" Precision="4" Scale="2" Nullable="false" />
+          <Property Name="TimeTakenToAdd" Type="Decimal" Precision="3" Scale="0" Nullable="false" />
+          <Property Name="TimeTakenToChg" Type="Decimal" Precision="3" Scale="0" Nullable="false" />
+          <Property Name="FaxInvInBatch" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="InterWhSale" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="SourceWarehouse" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TargetWarehouse" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="DispatchesMade" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="LiveDispExist" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="NumDispatches" Type="Decimal" Precision="4" Scale="0" Nullable="false" />
+          <Property Name="CustomerName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ShipAddress1" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ShipAddress2" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ShipAddress3" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ShipAddress3Loc" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ShipAddress4" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ShipAddress5" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ShipPostalCode" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ShipToGpsLat" Type="Decimal" Precision="8" Scale="6" Nullable="false" />
+          <Property Name="ShipToGpsLong" Type="Decimal" Precision="9" Scale="6" Nullable="false" />
+          <Property Name="State" Type="String" MaxLength="2" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="CountyZip" Type="String" MaxLength="5" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="ExtendedTaxCode" Type="String" MaxLength="3" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="MultiShipCode" Type="String" MaxLength="5" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="WebCreated" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="Quote" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="QuoteVersion" Type="Decimal" Precision="3" Scale="0" Nullable="false" />
+          <Property Name="GtrReference" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="NonMerchFlag" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="Email" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="User1" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="CompanyTaxNo" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TpmPickupFlag" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="TpmEvaluatedFlag" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="StandardComment" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="DetailStatus" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="SalesOrderSource" Type="String" MaxLength="6" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SalesOrderSrcDesc" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="LanguageCode" Type="String" MaxLength="2" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="ShippingLocation" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="IncludeInMrp" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="TimeStamp" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <NavigationProperty Name="ArInvoices" Relationship="SysproCompanyC_7Model.Syspro_FK_ArInvoice_SorMaster" FromRole="SorMaster" ToRole="ArInvoice" />
+        </EntityType>
+        <EntityContainer Name="SysproCompanyC_7Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="SorMasters" EntityType="Self.SorMaster" />
+          <EntitySet Name="ArInvoices" EntityType="SysproCompanyC_7Model.ArInvoice" />
+          <AssociationSet Name="Syspro_FK_ArInvoice_SorMaster" Association="SysproCompanyC_7Model.Syspro_FK_ArInvoice_SorMaster">
+            <End Role="SorMaster" EntitySet="SorMasters" />
+            <End Role="ArInvoice" EntitySet="ArInvoices" />
+          </AssociationSet>
+          </EntityContainer>
+        <EntityType Name="ArInvoice">
+          <Key>
+            <PropertyRef Name="Customer" />
+            <PropertyRef Name="Invoice" />
+            <PropertyRef Name="DocumentType" />
+          </Key>
+          <Property Name="Customer" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="Invoice" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="DocumentType" Type="String" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="NextPaymEntry" Type="Decimal" Nullable="false" Precision="10" Scale="0" />
+          <Property Name="InvoiceDate" Type="DateTime" Precision="3" />
+          <Property Name="SalesOrder" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="CustomerPoNumber" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Salesperson" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Branch" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Area" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="TermsCode" Type="String" Nullable="false" MaxLength="2" FixedLength="true" Unicode="false" />
+          <Property Name="OrigDiscValue" Type="Decimal" Nullable="false" Precision="14" Scale="2" />
+          <Property Name="InvoiceBal1" Type="Decimal" Nullable="false" Precision="14" Scale="2" />
+          <Property Name="InvoiceBal2" Type="Decimal" Nullable="false" Precision="14" Scale="2" />
+          <Property Name="InvoiceBal3" Type="Decimal" Nullable="false" Precision="14" Scale="2" />
+          <Property Name="InvoiceYear" Type="Decimal" Nullable="false" Precision="4" Scale="0" />
+          <Property Name="InvoiceMonth" Type="Decimal" Nullable="false" Precision="2" Scale="0" />
+          <Property Name="YearInvBalZero" Type="Decimal" Nullable="false" Precision="4" Scale="0" />
+          <Property Name="MonthInvBalZero" Type="Decimal" Nullable="false" Precision="2" Scale="0" />
+          <Property Name="LastDelNote" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="StoreNumber" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="ProofOfDelivery" Type="String" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="PodEntryDate" Type="DateTime" Precision="3" />
+          <Property Name="PodReference" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="CurrencyValue" Type="Decimal" Nullable="false" Precision="14" Scale="2" />
+          <Property Name="PostCurrency" Type="String" Nullable="false" MaxLength="3" FixedLength="true" Unicode="false" />
+          <Property Name="ConvRate" Type="Decimal" Nullable="false" Precision="12" Scale="6" />
+          <Property Name="MulDiv" Type="String" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="AccountCur" Type="String" Nullable="false" MaxLength="3" FixedLength="true" Unicode="false" />
+          <Property Name="AccConvRate" Type="Decimal" Nullable="false" Precision="12" Scale="6" />
+          <Property Name="AccMulDiv" Type="String" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="TriangCurrency" Type="String" Nullable="false" MaxLength="3" FixedLength="true" Unicode="false" />
+          <Property Name="TriangRate" Type="Decimal" Nullable="false" Precision="12" Scale="6" />
+          <Property Name="TriangMulDiv" Type="String" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="RetentionInv" Type="String" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="TaxStatus" Type="String" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="TaxPortion" Type="Decimal" Nullable="false" Precision="14" Scale="2" />
+          <Property Name="FixExchangeRate" Type="String" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="NextRevalNo" Type="Decimal" Nullable="false" Precision="10" Scale="0" />
+          <Property Name="TaxCode" Type="String" Nullable="false" MaxLength="3" FixedLength="true" Unicode="false" />
+          <Property Name="DiscBal" Type="Decimal" Nullable="false" Precision="14" Scale="2" />
+          <Property Name="PaymentRunFlag" Type="String" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="CollectionRunFlag" Type="String" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="InvoicePdcFlag" Type="String" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="TimeStamp" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="OrigInvRate" Type="Decimal" Nullable="false" Precision="12" Scale="6" />
+          <NavigationProperty Name="SorMaster" Relationship="SysproCompanyC_7Model.Syspro_FK_ArInvoice_SorMaster" FromRole="ArInvoice" ToRole="SorMaster" />
+        </EntityType>
+        <Association Name="Syspro_FK_ArInvoice_SorMaster">
+          <End Type="SysproCompanyC_7Model.SorMaster" Role="SorMaster" Multiplicity="1" />
+          <End Type="SysproCompanyC_7Model.ArInvoice" Role="ArInvoice" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SorMaster">
+              <PropertyRef Name="SalesOrder" />
+            </Principal>
+            <Dependent Role="ArInvoice">
+              <PropertyRef Name="SalesOrder" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="SysproCompanyC_7ModelStoreContainer" CdmEntityContainer="SysproCompanyC_7Entities">
+          <EntitySetMapping Name="SorMasters">
+            <EntityTypeMapping TypeName="SysproCompanyC_7Model.SorMaster">
+              <MappingFragment StoreEntitySet="SorMaster">
+                <ScalarProperty Name="SalesOrder" ColumnName="SalesOrder" />
+                <ScalarProperty Name="NextDetailLine" ColumnName="NextDetailLine" />
+                <ScalarProperty Name="OrderStatus" ColumnName="OrderStatus" />
+                <ScalarProperty Name="ActiveFlag" ColumnName="ActiveFlag" />
+                <ScalarProperty Name="CancelledFlag" ColumnName="CancelledFlag" />
+                <ScalarProperty Name="DocumentType" ColumnName="DocumentType" />
+                <ScalarProperty Name="Customer" ColumnName="Customer" />
+                <ScalarProperty Name="Salesperson" ColumnName="Salesperson" />
+                <ScalarProperty Name="CustomerPoNumber" ColumnName="CustomerPoNumber" />
+                <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+                <ScalarProperty Name="EntrySystemDate" ColumnName="EntrySystemDate" />
+                <ScalarProperty Name="ReqShipDate" ColumnName="ReqShipDate" />
+                <ScalarProperty Name="DateLastDocPrt" ColumnName="DateLastDocPrt" />
+                <ScalarProperty Name="ShippingInstrs" ColumnName="ShippingInstrs" />
+                <ScalarProperty Name="ShippingInstrsCod" ColumnName="ShippingInstrsCod" />
+                <ScalarProperty Name="AltShipAddrFlag" ColumnName="AltShipAddrFlag" />
+                <ScalarProperty Name="InvoiceCount" ColumnName="InvoiceCount" />
+                <ScalarProperty Name="InvTermsOverride" ColumnName="InvTermsOverride" />
+                <ScalarProperty Name="CreditAuthority" ColumnName="CreditAuthority" />
+                <ScalarProperty Name="Branch" ColumnName="Branch" />
+                <ScalarProperty Name="SpecialInstrs" ColumnName="SpecialInstrs" />
+                <ScalarProperty Name="EntInvoice" ColumnName="EntInvoice" />
+                <ScalarProperty Name="EntInvoiceDate" ColumnName="EntInvoiceDate" />
+                <ScalarProperty Name="DiscPct1" ColumnName="DiscPct1" />
+                <ScalarProperty Name="DiscPct2" ColumnName="DiscPct2" />
+                <ScalarProperty Name="DiscPct3" ColumnName="DiscPct3" />
+                <ScalarProperty Name="OrderType" ColumnName="OrderType" />
+                <ScalarProperty Name="TaxExemptFlag" ColumnName="TaxExemptFlag" />
+                <ScalarProperty Name="Area" ColumnName="Area" />
+                <ScalarProperty Name="TaxExemptNumber" ColumnName="TaxExemptNumber" />
+                <ScalarProperty Name="TaxExemptOverride" ColumnName="TaxExemptOverride" />
+                <ScalarProperty Name="CashCredit" ColumnName="CashCredit" />
+                <ScalarProperty Name="Warehouse" ColumnName="Warehouse" />
+                <ScalarProperty Name="LastInvoice" ColumnName="LastInvoice" />
+                <ScalarProperty Name="ScheduledOrdFlag" ColumnName="ScheduledOrdFlag" />
+                <ScalarProperty Name="GstExemptFlag" ColumnName="GstExemptFlag" />
+                <ScalarProperty Name="GstExemptNum" ColumnName="GstExemptNum" />
+                <ScalarProperty Name="GstExemptORide" ColumnName="GstExemptORide" />
+                <ScalarProperty Name="IbtFlag" ColumnName="IbtFlag" />
+                <ScalarProperty Name="OrdAcknwPrinted" ColumnName="OrdAcknwPrinted" />
+                <ScalarProperty Name="DetCustMvmtReqd" ColumnName="DetCustMvmtReqd" />
+                <ScalarProperty Name="DocumentFormat" ColumnName="DocumentFormat" />
+                <ScalarProperty Name="FixExchangeRate" ColumnName="FixExchangeRate" />
+                <ScalarProperty Name="ExchangeRate" ColumnName="ExchangeRate" />
+                <ScalarProperty Name="MulDiv" ColumnName="MulDiv" />
+                <ScalarProperty Name="Currency" ColumnName="Currency" />
+                <ScalarProperty Name="GstDeduction" ColumnName="GstDeduction" />
+                <ScalarProperty Name="OrderStatusFail" ColumnName="OrderStatusFail" />
+                <ScalarProperty Name="ConsolidatedOrder" ColumnName="ConsolidatedOrder" />
+                <ScalarProperty Name="CreditedInvDate" ColumnName="CreditedInvDate" />
+                <ScalarProperty Name="Job" ColumnName="Job" />
+                <ScalarProperty Name="SerialisedFlag" ColumnName="SerialisedFlag" />
+                <ScalarProperty Name="CounterSalesFlag" ColumnName="CounterSalesFlag" />
+                <ScalarProperty Name="Nationality" ColumnName="Nationality" />
+                <ScalarProperty Name="DeliveryTerms" ColumnName="DeliveryTerms" />
+                <ScalarProperty Name="TransactionNature" ColumnName="TransactionNature" />
+                <ScalarProperty Name="TransportMode" ColumnName="TransportMode" />
+                <ScalarProperty Name="ProcessFlag" ColumnName="ProcessFlag" />
+                <ScalarProperty Name="JobsExistFlag" ColumnName="JobsExistFlag" />
+                <ScalarProperty Name="AlternateKey" ColumnName="AlternateKey" />
+                <ScalarProperty Name="LastOperator" ColumnName="LastOperator" />
+                <ScalarProperty Name="HierarchyFlag" ColumnName="HierarchyFlag" />
+                <ScalarProperty Name="DepositFlag" ColumnName="DepositFlag" />
+                <ScalarProperty Name="EdiSource" ColumnName="EdiSource" />
+                <ScalarProperty Name="DeliveryNote" ColumnName="DeliveryNote" />
+                <ScalarProperty Name="Operator" ColumnName="Operator" />
+                <ScalarProperty Name="LineComp" ColumnName="LineComp" />
+                <ScalarProperty Name="CaptureHh" ColumnName="CaptureHh" />
+                <ScalarProperty Name="CaptureMm" ColumnName="CaptureMm" />
+                <ScalarProperty Name="LastDelNote" ColumnName="LastDelNote" />
+                <ScalarProperty Name="TimeDelPrtedHh" ColumnName="TimeDelPrtedHh" />
+                <ScalarProperty Name="TimeDelPrtedMm" ColumnName="TimeDelPrtedMm" />
+                <ScalarProperty Name="TimeInvPrtedHh" ColumnName="TimeInvPrtedHh" />
+                <ScalarProperty Name="TimeInvPrtedMm" ColumnName="TimeInvPrtedMm" />
+                <ScalarProperty Name="DateLastInvPrt" ColumnName="DateLastInvPrt" />
+                <ScalarProperty Name="Salesperson2" ColumnName="Salesperson2" />
+                <ScalarProperty Name="Salesperson3" ColumnName="Salesperson3" />
+                <ScalarProperty Name="Salesperson4" ColumnName="Salesperson4" />
+                <ScalarProperty Name="CommissionSales1" ColumnName="CommissionSales1" />
+                <ScalarProperty Name="CommissionSales2" ColumnName="CommissionSales2" />
+                <ScalarProperty Name="CommissionSales3" ColumnName="CommissionSales3" />
+                <ScalarProperty Name="CommissionSales4" ColumnName="CommissionSales4" />
+                <ScalarProperty Name="TimeTakenToAdd" ColumnName="TimeTakenToAdd" />
+                <ScalarProperty Name="TimeTakenToChg" ColumnName="TimeTakenToChg" />
+                <ScalarProperty Name="FaxInvInBatch" ColumnName="FaxInvInBatch" />
+                <ScalarProperty Name="InterWhSale" ColumnName="InterWhSale" />
+                <ScalarProperty Name="SourceWarehouse" ColumnName="SourceWarehouse" />
+                <ScalarProperty Name="TargetWarehouse" ColumnName="TargetWarehouse" />
+                <ScalarProperty Name="DispatchesMade" ColumnName="DispatchesMade" />
+                <ScalarProperty Name="LiveDispExist" ColumnName="LiveDispExist" />
+                <ScalarProperty Name="NumDispatches" ColumnName="NumDispatches" />
+                <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+                <ScalarProperty Name="ShipAddress1" ColumnName="ShipAddress1" />
+                <ScalarProperty Name="ShipAddress2" ColumnName="ShipAddress2" />
+                <ScalarProperty Name="ShipAddress3" ColumnName="ShipAddress3" />
+                <ScalarProperty Name="ShipAddress3Loc" ColumnName="ShipAddress3Loc" />
+                <ScalarProperty Name="ShipAddress4" ColumnName="ShipAddress4" />
+                <ScalarProperty Name="ShipAddress5" ColumnName="ShipAddress5" />
+                <ScalarProperty Name="ShipPostalCode" ColumnName="ShipPostalCode" />
+                <ScalarProperty Name="ShipToGpsLat" ColumnName="ShipToGpsLat" />
+                <ScalarProperty Name="ShipToGpsLong" ColumnName="ShipToGpsLong" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="CountyZip" ColumnName="CountyZip" />
+                <ScalarProperty Name="ExtendedTaxCode" ColumnName="ExtendedTaxCode" />
+                <ScalarProperty Name="MultiShipCode" ColumnName="MultiShipCode" />
+                <ScalarProperty Name="WebCreated" ColumnName="WebCreated" />
+                <ScalarProperty Name="Quote" ColumnName="Quote" />
+                <ScalarProperty Name="QuoteVersion" ColumnName="QuoteVersion" />
+                <ScalarProperty Name="GtrReference" ColumnName="GtrReference" />
+                <ScalarProperty Name="NonMerchFlag" ColumnName="NonMerchFlag" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="User1" ColumnName="User1" />
+                <ScalarProperty Name="CompanyTaxNo" ColumnName="CompanyTaxNo" />
+                <ScalarProperty Name="TpmPickupFlag" ColumnName="TpmPickupFlag" />
+                <ScalarProperty Name="TpmEvaluatedFlag" ColumnName="TpmEvaluatedFlag" />
+                <ScalarProperty Name="StandardComment" ColumnName="StandardComment" />
+                <ScalarProperty Name="DetailStatus" ColumnName="DetailStatus" />
+                <ScalarProperty Name="SalesOrderSource" ColumnName="SalesOrderSource" />
+                <ScalarProperty Name="SalesOrderSrcDesc" ColumnName="SalesOrderSrcDesc" />
+                <ScalarProperty Name="LanguageCode" ColumnName="LanguageCode" />
+                <ScalarProperty Name="ShippingLocation" ColumnName="ShippingLocation" />
+                <ScalarProperty Name="IncludeInMrp" ColumnName="IncludeInMrp" />
+                <ScalarProperty Name="TimeStamp" ColumnName="TimeStamp" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ArInvoices">
+            <EntityTypeMapping TypeName="SysproCompanyC_7Model.ArInvoice">
+              <MappingFragment StoreEntitySet="ArInvoice">
+                <ScalarProperty Name="OrigInvRate" ColumnName="OrigInvRate" />
+                <ScalarProperty Name="TimeStamp" ColumnName="TimeStamp" />
+                <ScalarProperty Name="InvoicePdcFlag" ColumnName="InvoicePdcFlag" />
+                <ScalarProperty Name="CollectionRunFlag" ColumnName="CollectionRunFlag" />
+                <ScalarProperty Name="PaymentRunFlag" ColumnName="PaymentRunFlag" />
+                <ScalarProperty Name="DiscBal" ColumnName="DiscBal" />
+                <ScalarProperty Name="TaxCode" ColumnName="TaxCode" />
+                <ScalarProperty Name="NextRevalNo" ColumnName="NextRevalNo" />
+                <ScalarProperty Name="FixExchangeRate" ColumnName="FixExchangeRate" />
+                <ScalarProperty Name="TaxPortion" ColumnName="TaxPortion" />
+                <ScalarProperty Name="TaxStatus" ColumnName="TaxStatus" />
+                <ScalarProperty Name="RetentionInv" ColumnName="RetentionInv" />
+                <ScalarProperty Name="TriangMulDiv" ColumnName="TriangMulDiv" />
+                <ScalarProperty Name="TriangRate" ColumnName="TriangRate" />
+                <ScalarProperty Name="TriangCurrency" ColumnName="TriangCurrency" />
+                <ScalarProperty Name="AccMulDiv" ColumnName="AccMulDiv" />
+                <ScalarProperty Name="AccConvRate" ColumnName="AccConvRate" />
+                <ScalarProperty Name="AccountCur" ColumnName="AccountCur" />
+                <ScalarProperty Name="MulDiv" ColumnName="MulDiv" />
+                <ScalarProperty Name="ConvRate" ColumnName="ConvRate" />
+                <ScalarProperty Name="PostCurrency" ColumnName="PostCurrency" />
+                <ScalarProperty Name="CurrencyValue" ColumnName="CurrencyValue" />
+                <ScalarProperty Name="PodReference" ColumnName="PodReference" />
+                <ScalarProperty Name="PodEntryDate" ColumnName="PodEntryDate" />
+                <ScalarProperty Name="ProofOfDelivery" ColumnName="ProofOfDelivery" />
+                <ScalarProperty Name="StoreNumber" ColumnName="StoreNumber" />
+                <ScalarProperty Name="LastDelNote" ColumnName="LastDelNote" />
+                <ScalarProperty Name="MonthInvBalZero" ColumnName="MonthInvBalZero" />
+                <ScalarProperty Name="YearInvBalZero" ColumnName="YearInvBalZero" />
+                <ScalarProperty Name="InvoiceMonth" ColumnName="InvoiceMonth" />
+                <ScalarProperty Name="InvoiceYear" ColumnName="InvoiceYear" />
+                <ScalarProperty Name="InvoiceBal3" ColumnName="InvoiceBal3" />
+                <ScalarProperty Name="InvoiceBal2" ColumnName="InvoiceBal2" />
+                <ScalarProperty Name="InvoiceBal1" ColumnName="InvoiceBal1" />
+                <ScalarProperty Name="OrigDiscValue" ColumnName="OrigDiscValue" />
+                <ScalarProperty Name="TermsCode" ColumnName="TermsCode" />
+                <ScalarProperty Name="Area" ColumnName="Area" />
+                <ScalarProperty Name="Branch" ColumnName="Branch" />
+                <ScalarProperty Name="Salesperson" ColumnName="Salesperson" />
+                <ScalarProperty Name="CustomerPoNumber" ColumnName="CustomerPoNumber" />
+                <ScalarProperty Name="SalesOrder" ColumnName="SalesOrder" />
+                <ScalarProperty Name="InvoiceDate" ColumnName="InvoiceDate" />
+                <ScalarProperty Name="NextPaymEntry" ColumnName="NextPaymEntry" />
+                <ScalarProperty Name="DocumentType" ColumnName="DocumentType" />
+                <ScalarProperty Name="Invoice" ColumnName="Invoice" />
+                <ScalarProperty Name="Customer" ColumnName="Customer" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

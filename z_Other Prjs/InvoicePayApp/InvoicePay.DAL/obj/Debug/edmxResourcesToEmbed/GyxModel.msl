@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="GYXModelStoreContainer" CdmEntityContainer="GYXEntities">
+    <EntitySetMapping Name="InvoicePayDetails">
+      <EntityTypeMapping TypeName="GYXModel.InvoicePayDetail">
+        <MappingFragment StoreEntitySet="InvoicePayDetail">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SalesOrder" ColumnName="SalesOrder" />
+          <ScalarProperty Name="Invoice" ColumnName="Invoice" />
+          <ScalarProperty Name="InvoiceValue" ColumnName="InvoiceValue" />
+          <ScalarProperty Name="InvoiceDate" ColumnName="InvoiceDate" />
+          <ScalarProperty Name="Balance" ColumnName="Balance" />
+          <ScalarProperty Name="CreditNoteValue" ColumnName="CreditNoteValue" />
+          <ScalarProperty Name="Contra" ColumnName="Contra" />
+          <ScalarProperty Name="Retention" ColumnName="Retention" />
+          <ScalarProperty Name="BalanceAfterRetenContra" ColumnName="BalanceAfterRetenContra" />
+          <ScalarProperty Name="Other" ColumnName="Other" />
+          <ScalarProperty Name="OtherComment" ColumnName="OtherComment" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="PayDate" ColumnName="PayDate" />
+          <ScalarProperty Name="PayAmount" ColumnName="PayAmount" />
+          <ScalarProperty Name="PayDate1" ColumnName="PayDate1" />
+          <ScalarProperty Name="PayAmount1" ColumnName="PayAmount1" />
+          <ScalarProperty Name="PayDate2" ColumnName="PayDate2" />
+          <ScalarProperty Name="PayAmount2" ColumnName="PayAmount2" />
+          <ScalarProperty Name="PayDate3" ColumnName="PayDate3" />
+          <ScalarProperty Name="PayAmount3" ColumnName="PayAmount3" />
+          <ScalarProperty Name="PayDate4" ColumnName="PayDate4" />
+          <ScalarProperty Name="PayAmount4" ColumnName="PayAmount4" />
+          <ScalarProperty Name="PayDate5" ColumnName="PayDate5" />
+          <ScalarProperty Name="PayAmount5" ColumnName="PayAmount5" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

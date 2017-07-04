@@ -1,0 +1,230 @@
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\InvoicePay.exe.config
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\obj\Debug\InvoicePay.vbprojResolveAssemblyReference.cache
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\obj\Debug\InvoicePay.frmInvoicePayment.resources
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\obj\Debug\InvoicePay.Resources.resources
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\obj\Debug\InvoicePay.vbproj.GenerateResource.Cache
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\obj\Debug\InvoicePay.exe.licenses
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\obj\Debug\InvoicePay.xml
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\InvoicePay.exe
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\InvoicePay.pdb
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\InvoicePay.xml
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\DevExpress.Data.v14.1.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\DevExpress.Printing.v14.1.Core.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\DevExpress.Utils.v14.1.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\DevExpress.XtraBars.v14.1.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\DevExpress.XtraEditors.v14.1.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\DevExpress.XtraGrid.v14.1.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\DevExpress.XtraLayout.v14.1.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\DevExpress.XtraPrinting.v14.1.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\EntityFramework.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\InvoicePay.Entity.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\DevExpress.Sparkline.v14.1.Core.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\DevExpress.RichEdit.v14.1.Core.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\DevExpress.XtraTreeList.v14.1.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\DevExpress.Office.v14.1.Core.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\InvoicePay.Entity.pdb
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\InvoicePay.Entity.xml
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\DevExpress.Data.v14.1.xml
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\DevExpress.Printing.v14.1.Core.xml
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\DevExpress.Utils.v14.1.xml
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\DevExpress.XtraBars.v14.1.xml
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\DevExpress.XtraEditors.v14.1.xml
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\DevExpress.XtraGrid.v14.1.xml
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\DevExpress.XtraLayout.v14.1.xml
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\DevExpress.XtraPrinting.v14.1.xml
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\EntityFramework.xml
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\DevExpress.Sparkline.v14.1.Core.xml
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\DevExpress.RichEdit.v14.1.Core.xml
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\DevExpress.XtraTreeList.v14.1.xml
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\DevExpress.Office.v14.1.Core.xml
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\de\DevExpress.Data.v14.1.resources.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\es\DevExpress.Data.v14.1.resources.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\ja\DevExpress.Data.v14.1.resources.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\ru\DevExpress.Data.v14.1.resources.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\de\DevExpress.Printing.v14.1.Core.resources.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\es\DevExpress.Printing.v14.1.Core.resources.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\ja\DevExpress.Printing.v14.1.Core.resources.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\ru\DevExpress.Printing.v14.1.Core.resources.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\de\DevExpress.Utils.v14.1.resources.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\es\DevExpress.Utils.v14.1.resources.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\ja\DevExpress.Utils.v14.1.resources.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\ru\DevExpress.Utils.v14.1.resources.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\de\DevExpress.XtraBars.v14.1.resources.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\es\DevExpress.XtraBars.v14.1.resources.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\ja\DevExpress.XtraBars.v14.1.resources.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\ru\DevExpress.XtraBars.v14.1.resources.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\de\DevExpress.XtraEditors.v14.1.resources.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\es\DevExpress.XtraEditors.v14.1.resources.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\ja\DevExpress.XtraEditors.v14.1.resources.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\ru\DevExpress.XtraEditors.v14.1.resources.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\de\DevExpress.XtraGrid.v14.1.resources.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\es\DevExpress.XtraGrid.v14.1.resources.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\ja\DevExpress.XtraGrid.v14.1.resources.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\ru\DevExpress.XtraGrid.v14.1.resources.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\de\DevExpress.XtraLayout.v14.1.resources.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\es\DevExpress.XtraLayout.v14.1.resources.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\ja\DevExpress.XtraLayout.v14.1.resources.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\ru\DevExpress.XtraLayout.v14.1.resources.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\de\DevExpress.XtraPrinting.v14.1.resources.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\es\DevExpress.XtraPrinting.v14.1.resources.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\ja\DevExpress.XtraPrinting.v14.1.resources.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\ru\DevExpress.XtraPrinting.v14.1.resources.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\de\DevExpress.Sparkline.v14.1.Core.resources.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\es\DevExpress.Sparkline.v14.1.Core.resources.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\ja\DevExpress.Sparkline.v14.1.Core.resources.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\ru\DevExpress.Sparkline.v14.1.Core.resources.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\de\DevExpress.RichEdit.v14.1.Core.resources.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\es\DevExpress.RichEdit.v14.1.Core.resources.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\ja\DevExpress.RichEdit.v14.1.Core.resources.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\ru\DevExpress.RichEdit.v14.1.Core.resources.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\de\DevExpress.XtraTreeList.v14.1.resources.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\es\DevExpress.XtraTreeList.v14.1.resources.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\ja\DevExpress.XtraTreeList.v14.1.resources.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\ru\DevExpress.XtraTreeList.v14.1.resources.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\de\DevExpress.Office.v14.1.Core.resources.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\es\DevExpress.Office.v14.1.Core.resources.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\ja\DevExpress.Office.v14.1.Core.resources.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\ru\DevExpress.Office.v14.1.Core.resources.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\obj\Debug\InvoicePay.exe
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\obj\Debug\InvoicePay.pdb
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\InvoicePay.BLL.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\InvoicePay.BLL.pdb
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\InvoicePay.BLL.xml
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\DevExpress.XtraVerticalGrid.v14.1.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\InvoicePay.DAL.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\DevExpress.XtraVerticalGrid.v14.1.xml
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\InvoicePay.DAL.pdb
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\InvoicePay.DAL.xml
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\de\DevExpress.XtraVerticalGrid.v14.1.resources.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\es\DevExpress.XtraVerticalGrid.v14.1.resources.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\ja\DevExpress.XtraVerticalGrid.v14.1.resources.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\ru\DevExpress.XtraVerticalGrid.v14.1.resources.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\DevExpress.XtraPivotGrid.v14.1.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\DevExpress.PivotGrid.v14.1.Core.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\DevExpress.XtraPivotGrid.v14.1.xml
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\DevExpress.PivotGrid.v14.1.Core.xml
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\de\DevExpress.XtraPivotGrid.v14.1.resources.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\es\DevExpress.XtraPivotGrid.v14.1.resources.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\ja\DevExpress.XtraPivotGrid.v14.1.resources.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\ru\DevExpress.XtraPivotGrid.v14.1.resources.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\de\DevExpress.PivotGrid.v14.1.Core.resources.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\es\DevExpress.PivotGrid.v14.1.Core.resources.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\ja\DevExpress.PivotGrid.v14.1.Core.resources.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay\bin\Debug\ru\DevExpress.PivotGrid.v14.1.Core.resources.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\InvoicePay.exe.config
+D:\SOURCE\InvoicePayApp\InvoicePay\obj\Debug\InvoicePay.exe
+D:\SOURCE\InvoicePayApp\InvoicePay\obj\Debug\InvoicePay.xml
+D:\SOURCE\InvoicePayApp\InvoicePay\obj\Debug\InvoicePay.pdb
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\InvoicePay.exe
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\InvoicePay.pdb
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\InvoicePay.xml
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\DevExpress.Data.v14.1.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\DevExpress.Printing.v14.1.Core.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\DevExpress.Utils.v14.1.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\DevExpress.XtraBars.v14.1.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\DevExpress.XtraEditors.v14.1.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\DevExpress.XtraGrid.v14.1.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\DevExpress.XtraLayout.v14.1.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\DevExpress.XtraPivotGrid.v14.1.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\DevExpress.XtraPrinting.v14.1.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\DevExpress.XtraVerticalGrid.v14.1.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\EntityFramework.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\EntityFramework.SqlServer.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\InvoicePay.BLL.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\InvoicePay.Entity.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\InvoicePay.DAL.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\DevExpress.Sparkline.v14.1.Core.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\DevExpress.PivotGrid.v14.1.Core.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\DevExpress.RichEdit.v14.1.Core.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\DevExpress.XtraTreeList.v14.1.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\DevExpress.Office.v14.1.Core.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\InvoicePay.BLL.pdb
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\InvoicePay.BLL.xml
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\InvoicePay.Entity.pdb
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\InvoicePay.Entity.xml
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\DevExpress.Data.v14.1.xml
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\DevExpress.Printing.v14.1.Core.xml
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\DevExpress.Utils.v14.1.xml
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\DevExpress.XtraBars.v14.1.xml
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\DevExpress.XtraEditors.v14.1.xml
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\DevExpress.XtraGrid.v14.1.xml
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\DevExpress.XtraLayout.v14.1.xml
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\DevExpress.XtraPivotGrid.v14.1.xml
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\DevExpress.XtraPrinting.v14.1.xml
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\DevExpress.XtraVerticalGrid.v14.1.xml
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\EntityFramework.xml
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\EntityFramework.SqlServer.xml
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\InvoicePay.DAL.pdb
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\InvoicePay.DAL.xml
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\DevExpress.Sparkline.v14.1.Core.xml
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\DevExpress.PivotGrid.v14.1.Core.xml
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\DevExpress.RichEdit.v14.1.Core.xml
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\DevExpress.XtraTreeList.v14.1.xml
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\DevExpress.Office.v14.1.Core.xml
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\de\DevExpress.Data.v14.1.resources.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\es\DevExpress.Data.v14.1.resources.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\ja\DevExpress.Data.v14.1.resources.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\ru\DevExpress.Data.v14.1.resources.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\de\DevExpress.Printing.v14.1.Core.resources.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\es\DevExpress.Printing.v14.1.Core.resources.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\ja\DevExpress.Printing.v14.1.Core.resources.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\ru\DevExpress.Printing.v14.1.Core.resources.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\de\DevExpress.Utils.v14.1.resources.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\es\DevExpress.Utils.v14.1.resources.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\ja\DevExpress.Utils.v14.1.resources.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\ru\DevExpress.Utils.v14.1.resources.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\de\DevExpress.XtraBars.v14.1.resources.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\es\DevExpress.XtraBars.v14.1.resources.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\ja\DevExpress.XtraBars.v14.1.resources.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\ru\DevExpress.XtraBars.v14.1.resources.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\de\DevExpress.XtraEditors.v14.1.resources.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\es\DevExpress.XtraEditors.v14.1.resources.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\ja\DevExpress.XtraEditors.v14.1.resources.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\ru\DevExpress.XtraEditors.v14.1.resources.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\de\DevExpress.XtraGrid.v14.1.resources.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\es\DevExpress.XtraGrid.v14.1.resources.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\ja\DevExpress.XtraGrid.v14.1.resources.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\ru\DevExpress.XtraGrid.v14.1.resources.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\de\DevExpress.XtraLayout.v14.1.resources.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\es\DevExpress.XtraLayout.v14.1.resources.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\ja\DevExpress.XtraLayout.v14.1.resources.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\ru\DevExpress.XtraLayout.v14.1.resources.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\de\DevExpress.XtraPivotGrid.v14.1.resources.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\es\DevExpress.XtraPivotGrid.v14.1.resources.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\ja\DevExpress.XtraPivotGrid.v14.1.resources.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\ru\DevExpress.XtraPivotGrid.v14.1.resources.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\de\DevExpress.XtraPrinting.v14.1.resources.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\es\DevExpress.XtraPrinting.v14.1.resources.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\ja\DevExpress.XtraPrinting.v14.1.resources.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\ru\DevExpress.XtraPrinting.v14.1.resources.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\de\DevExpress.XtraVerticalGrid.v14.1.resources.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\es\DevExpress.XtraVerticalGrid.v14.1.resources.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\ja\DevExpress.XtraVerticalGrid.v14.1.resources.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\ru\DevExpress.XtraVerticalGrid.v14.1.resources.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\de\DevExpress.Sparkline.v14.1.Core.resources.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\es\DevExpress.Sparkline.v14.1.Core.resources.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\ja\DevExpress.Sparkline.v14.1.Core.resources.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\ru\DevExpress.Sparkline.v14.1.Core.resources.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\de\DevExpress.PivotGrid.v14.1.Core.resources.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\es\DevExpress.PivotGrid.v14.1.Core.resources.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\ja\DevExpress.PivotGrid.v14.1.Core.resources.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\ru\DevExpress.PivotGrid.v14.1.Core.resources.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\de\DevExpress.RichEdit.v14.1.Core.resources.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\es\DevExpress.RichEdit.v14.1.Core.resources.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\ja\DevExpress.RichEdit.v14.1.Core.resources.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\ru\DevExpress.RichEdit.v14.1.Core.resources.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\de\DevExpress.XtraTreeList.v14.1.resources.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\es\DevExpress.XtraTreeList.v14.1.resources.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\ja\DevExpress.XtraTreeList.v14.1.resources.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\ru\DevExpress.XtraTreeList.v14.1.resources.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\de\DevExpress.Office.v14.1.Core.resources.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\es\DevExpress.Office.v14.1.Core.resources.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\ja\DevExpress.Office.v14.1.Core.resources.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\bin\Debug\ru\DevExpress.Office.v14.1.Core.resources.dll
+D:\SOURCE\InvoicePayApp\InvoicePay\obj\Debug\InvoicePay.vbprojResolveAssemblyReference.cache
+D:\SOURCE\InvoicePayApp\InvoicePay\obj\Debug\InvoicePay.frmInvoicePayment.resources
+D:\SOURCE\InvoicePayApp\InvoicePay\obj\Debug\InvoicePay.Resources.resources
+D:\SOURCE\InvoicePayApp\InvoicePay\obj\Debug\InvoicePay.vbproj.GenerateResource.Cache
+D:\SOURCE\InvoicePayApp\InvoicePay\obj\Debug\InvoicePay.exe.licenses

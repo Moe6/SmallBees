@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GYXModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="InvoicePayDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SalesOrder" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Invoice" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="InvoiceValue" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="InvoiceDate" Type="DateTime" Precision="3" />
+    <Property Name="Balance" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="CreditNoteValue" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Contra" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Retention" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="BalanceAfterRetenContra" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Other" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="OtherComment" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Comment" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Remark" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="PayDate" Type="DateTime" Precision="3" />
+    <Property Name="PayAmount" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="PayDate1" Type="DateTime" Precision="3" />
+    <Property Name="PayAmount1" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="PayDate2" Type="DateTime" Precision="3" />
+    <Property Name="PayAmount2" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="PayDate3" Type="DateTime" Precision="3" />
+    <Property Name="PayAmount3" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="PayDate4" Type="DateTime" Precision="3" />
+    <Property Name="PayAmount4" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="PayDate5" Type="DateTime" Precision="3" />
+    <Property Name="PayAmount5" Type="Decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityContainer Name="GYXEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="InvoicePayDetails" EntityType="Self.InvoicePayDetail" />
+  </EntityContainer>
+</Schema>

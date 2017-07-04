@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GYXModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="InvoicePayDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SalesOrder" Type="nvarchar" MaxLength="50" />
+    <Property Name="Invoice" Type="nvarchar" MaxLength="50" />
+    <Property Name="InvoiceValue" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="InvoiceDate" Type="datetime" />
+    <Property Name="Balance" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="CreditNoteValue" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Contra" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Retention" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="BalanceAfterRetenContra" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Other" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="OtherComment" Type="nvarchar" MaxLength="150" />
+    <Property Name="Comment" Type="nvarchar" MaxLength="150" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="150" />
+    <Property Name="PayDate" Type="datetime" />
+    <Property Name="PayAmount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="PayDate1" Type="datetime" />
+    <Property Name="PayAmount1" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="PayDate2" Type="datetime" />
+    <Property Name="PayAmount2" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="PayDate3" Type="datetime" />
+    <Property Name="PayAmount3" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="PayDate4" Type="datetime" />
+    <Property Name="PayAmount4" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="PayDate5" Type="datetime" />
+    <Property Name="PayAmount5" Type="decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityContainer Name="GYXModelStoreContainer">
+    <EntitySet Name="InvoicePayDetail" EntityType="Self.InvoicePayDetail" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

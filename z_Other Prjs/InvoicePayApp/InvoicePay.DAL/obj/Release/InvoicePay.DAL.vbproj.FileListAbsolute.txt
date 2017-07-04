@@ -1,0 +1,3 @@
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay.DAL\obj\Release\InvoicePay.DAL.vbprojResolveAssemblyReference.cache
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay.DAL\obj\Release\InvoicePay.DAL.Resources.resources
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay.DAL\obj\Release\InvoicePay.DAL.vbproj.GenerateResource.Cache

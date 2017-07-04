@@ -1,0 +1,27 @@
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay.Entity\bin\Debug\InvoicePay.Entity.dll.config
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay.Entity\bin\Debug\InvoicePay.Entity.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay.Entity\bin\Debug\InvoicePay.Entity.pdb
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay.Entity\bin\Debug\InvoicePay.Entity.xml
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay.Entity\bin\Debug\EntityFramework.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay.Entity\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay.Entity\bin\Debug\EntityFramework.xml
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay.Entity\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay.Entity\obj\Debug\InvoicePay.Entity.Resources.resources
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay.Entity\obj\Debug\InvoicePay.Entity.vbproj.GenerateResource.Cache
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay.Entity\obj\Debug\InvoicePay.Entity.dll
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay.Entity\obj\Debug\InvoicePay.Entity.xml
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay.Entity\obj\Debug\InvoicePay.Entity.pdb
+D:\SOURCE\InvoicePayApp\InvoicePay.Entity\bin\Debug\InvoicePay.Entity.dll.config
+D:\SOURCE\InvoicePayApp\InvoicePay.Entity\bin\Debug\InvoicePay.Entity.dll
+D:\SOURCE\InvoicePayApp\InvoicePay.Entity\bin\Debug\InvoicePay.Entity.pdb
+D:\SOURCE\InvoicePayApp\InvoicePay.Entity\bin\Debug\InvoicePay.Entity.xml
+D:\SOURCE\InvoicePayApp\InvoicePay.Entity\bin\Debug\EntityFramework.dll
+D:\SOURCE\InvoicePayApp\InvoicePay.Entity\bin\Debug\EntityFramework.SqlServer.dll
+D:\SOURCE\InvoicePayApp\InvoicePay.Entity\bin\Debug\EntityFramework.xml
+D:\SOURCE\InvoicePayApp\InvoicePay.Entity\bin\Debug\EntityFramework.SqlServer.xml
+D:\SOURCE\InvoicePayApp\InvoicePay.Entity\obj\Debug\InvoicePay.Entity.Resources.resources
+D:\SOURCE\InvoicePayApp\InvoicePay.Entity\obj\Debug\InvoicePay.Entity.vbproj.GenerateResource.Cache
+D:\SOURCE\InvoicePayApp\InvoicePay.Entity\obj\Debug\InvoicePay.Entity.dll
+D:\SOURCE\InvoicePayApp\InvoicePay.Entity\obj\Debug\InvoicePay.Entity.xml
+D:\SOURCE\InvoicePayApp\InvoicePay.Entity\obj\Debug\InvoicePay.Entity.pdb
+C:\Users\Moe\Documents\Visual Studio 2015\Projects\InvoicePayApp\InvoicePay.Entity\obj\Debug\InvoicePay.Entity.vbprojResolveAssemblyReference.cache
